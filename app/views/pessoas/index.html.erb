@@ -1,0 +1,7 @@
+<h1>Veja todas as pessoas aqui</h1>
+
+<br><br>
+
+<% @pessoas.each do |pessoa| %>
+	<p><%= pessoa.idade %> - <%= pessoa.nome %></p>
+<% end %>

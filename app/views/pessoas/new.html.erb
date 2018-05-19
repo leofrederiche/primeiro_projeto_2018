@@ -1,0 +1,12 @@
+<%= form_for @pessoa do |pessoa| %>
+	<p>
+		Nome: 
+		<%= pessoa.text_field :nome %>		
+	</p>
+
+	<p>
+		Idade:
+		<%= pessoa.text_field :idade %>
+	</p>
+	<%= pessoa.submit %>
+<% end%>
