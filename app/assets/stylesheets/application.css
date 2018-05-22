@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+/*
+a{
+	border: 1px solid black;
+	padding: 2px;
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover{
+	color: red;
+}
+*/

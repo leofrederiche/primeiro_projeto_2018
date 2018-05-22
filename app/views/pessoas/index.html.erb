@@ -3,5 +3,10 @@
 <br><br>
 
 <% @pessoas.each do |pessoa| %>
-	<p><%= pessoa.idade %> - <%= pessoa.nome %></p>
+	<p>
+		<%= pessoa.idade %> - 
+		<%= pessoa.nome %>
+		<%= link_to 'Apagar', pessoa_path(pessoa.id), method: :delete %>		
+		<%= link_to 'Editar', edit_pessoa_path(pessoa.id) %>
+	</p>
 <% end %>
